@@ -52,7 +52,7 @@ function last(arr, cb) {
 }
 
 function last(arr, cb) {
-  return cb(arr[length-1]);
+  return cb(arr[arr.length-1]);
 }
 
 function sumNums(x, y, cb) {
@@ -76,6 +76,9 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
 }
 
+function contains(item, list, cb) {
+  return cb(list.includes(item));
+}
 
 /* STRETCH PROBLEM */
 
